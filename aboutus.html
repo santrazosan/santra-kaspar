@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+    }
+    nav {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333;
+      color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #006D5B;
+      text-decoration: none;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    nav ul li a:hover {
+      background-color: #006D5B;
+    }
+    .about-container {
+      max-width: 900px;
+      margin: 100px auto 50px; /* Adjust margin for fixed nav */
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: black;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #006D5B;
+      width: 100%;
+    }
+    .about-image {
+      flex: 1 1 300px;
+      text-align: center;
+      margin: 10px;
+    }
+    .about-image img {
+      max-width: 140%;
+    }
+    .about-content {
+      flex: 2 1 400px;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .about-content p {
+      margin: 10px 0;
+    }
+    .about-button {
+      margin-top: 20px;
+    }
+    .about-button a {
+      display: inline-block;
+      padding: 10px 20px;
+      text-decoration: none;
+      background-color: #0073e6;
+      color: white;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .about-button a:hover {
+      background-color: #005bb5;
+    }
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-content {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav-container">
+    <a href="index.html" class="logo">Santra Kaspar</a>
+    <ul>
+      <li><a href="portflio_notepad.html">Home</a></li>
+          <li><a href="aboutus.html">About Me</a></li>
+          <li><a href="projectpage.html">Projects</a></li>
+          <li><a href="skillspage.html">Skills</a></li>
+          <li><a href="cv.html">CV</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- About Me Section -->
+<div class="about-container">
+  <h1>About Me</h1>
+  <div class="about-image">
+    <img src="sans2.jfif" alt="Profile Picture">
+  </div>
+  <div class="about-content">
+    <p>
+      Hi there! I'm <strong>Santra K</strong>, a passionate and creative web designer. I'm currently pursuing a degree in Computer Applications at Stella Maris College, Chennai, Tamil Nadu. I specialize in creating responsive, user-friendly, and visually stunning websites.
+    </p>
+    <p>
+      Ever since I first explored web design, I’ve been fascinated by the endless possibilities of creativity on the web. I believe in the power of design to communicate ideas clearly and engage users effectively. My goal is to create websites that are not only beautiful but also functional and easy to navigate.
+    </p>
+    <p>
+      I am proficient in HTML, CSS, JavaScript, and have hands-on experience with popular design tools such as Figma and GIMP. I focus on UI/UX principles to ensure the user’s experience is at the heart of my designs, making each project unique and tailored to the client’s needs.
+    </p>
+    <p>
+      Beyond academics, I love engaging in cultural events, content creation, and public speaking. Whether it's hosting events or designing innovative projects, I strive to make every experience impactful.
+    </p>
+    <p>
+      If you're interested in working together or want to learn more about my design approach, feel free to <a href="contact.html" style="color: #0073e6;">reach out</a>—I’d love to collaborate with you!
+    </p>
+    <div class="about-button">
+      <a href="contact.html">Contact Me</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

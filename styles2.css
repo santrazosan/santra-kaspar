@@ -1,0 +1,170 @@
+/* Basic reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif; /* Changed to a font better suited for a dark theme */
+  background-color: #000; /* Set the background color to black */
+  color: #fff; /* Text color changed to white for contrast */
+}
+h1 {
+  font-size: 2.5rem;
+  color: #fff; /* Default white text for the name */
+}
+
+h1 span {
+  color: #006D5B; /* Highlight the name in the specific color */
+}
+
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #333; /* Dark background for the navbar */
+}
+
+.nav__content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+nav .links ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav .links ul li a {
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav .links ul li a:hover {
+  background-color: #006d5b;
+}
+
+.resume-section {
+  padding: 5rem 2rem;
+  margin-top: 100px; /* Prevent content from hiding behind the fixed nav */
+}
+
+.resume-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.resume-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the profile image and text */
+  gap: 2rem;
+  text-align: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 180px; /* Slightly larger image */
+  height: 180px;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #fff; /* White text for the name */
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.resume-content h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #fff; /* White text for section headings */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  color: #fff; /* White text in the table */
+}
+
+th {
+  background-color: #444;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+ul li a {
+  color: #006d5b;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .resume-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .resume-section {
+    padding: 3rem 1rem;
+  }
+
+  table, ul {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  table th, table td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}

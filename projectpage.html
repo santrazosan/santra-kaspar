@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+    }
+
+    /* Navigation Bar Styles */
+    nav {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333;
+      color: white;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #006D5B;
+      text-decoration: none;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    nav ul li a:hover {
+      background-color: #006D5B;
+    }
+
+    .projects-container {
+      max-width: 1200px;
+      margin: 100px auto 50px; /* Adjusted for fixed nav */
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #006D5B;
+      margin-bottom: 30px;
+    }
+
+    .projects-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .project-card {
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+      overflow: hidden;
+      width: 300px;
+      text-align: center;
+    }
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .project-card h3 {
+      color: #006D5B;
+      margin: 15px 0 10px;
+    }
+    .project-card p {
+      padding: 0 15px;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .project-card a {
+      display: inline-block;
+      margin-bottom: 15px;
+      padding: 10px 15px;
+      background-color: #0073e6;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .project-card a:hover {
+      background-color: #005bb5;
+    }
+
+    @media (max-width: 768px) {
+      .projects-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+  <div class="nav-container">
+    <a href="index.html" class="logo">Santra Kaspar</a>
+    <ul>
+     <li><a href="portflio_notepad.html">Home</a></li>
+          <li><a href="aboutus.html">About Me</a></li>
+          <li><a href="projectpage.html">Projects</a></li>
+          <li><a href="skillspage.html">Skills</a></li>
+          <li><a href="cv.html">CV</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Projects Section -->
+<div class="projects-container">
+  <h1>My Projects</h1>
+  <div class="projects-grid">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="groceryimage.png" alt="Project 1">
+      <h3>Grocery Shopping Website</h3>
+      <p>A stylish client-side website for a modeling agency, featuring responsive design and user-friendly navigation.</p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="beautywebsiteimage.png" alt="Project 2">
+      <h3>Beauty & Cosmetics Website</h3>
+      <p>Developed a server-side website with dynamic features, integrating database operations for a beauty brand.</p>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="hcwebsiteimage.png" alt="Project 3">
+      <h3>Home Center Website</h3>
+      <p>Conducted a critical analysis of Instagram algorithms, focusing on their impact on content creators.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

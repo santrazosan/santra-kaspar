@@ -1,0 +1,151 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000; /* Black background for dark theme */
+  color: #fff; /* White text for contrast */
+}
+
+nav {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.nav__content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo a {
+  font-size: 1.75rem;
+  color: #006d5b; /* Highlighted color for the logo */
+  font-weight: bold;
+}
+
+nav .links ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav .links ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+
+nav .links ul li a.active,
+nav .links ul li a:hover {
+  background-color: #006d5b;
+  border-radius: 5px;
+}
+
+.contact-section {
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.contact-container h1 {
+  font-size: 2.5rem;
+  color: #006d5b;
+  margin-bottom: 1rem;
+}
+
+.contact-container p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.contact-details p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
+.contact-form {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #006d5b;
+}
+
+.btn {
+  background-color: #006d5b;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #004c3d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav .nav__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav .links ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contact-container {
+    padding: 1rem;
+  }
+}

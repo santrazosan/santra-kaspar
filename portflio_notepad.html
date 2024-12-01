@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+	href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+	  />
+	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | Responsive Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#"> Welcome To My portfolio</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+            <div class="links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="aboutus.html">About Me</a></li>
+          <li><a href="projectpage.html">Projects</a></li>
+          <li><a href="skillspage.html">Skills</a></li>
+          <li><a href="cv.html">CV</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div></div></div>
+    </nav>
+<section class="section">
+      <div class="section__container">
+        <div class="content">
+		<p class="subtitle">HELLO</p>
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700" class="h1">I'm <span class="title">Santra Kaspar</span></h1>
+                <span data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900" class="typewriter">I'm a <span class="typewriter-text"></span><label for="">|</label></span>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100" class="p">A passionate web designer and developer with a keen eye for detail and creativity.With a background in Computer Applications at Stella Maris College, Chennai,Tamil Nadu.I specialize in crafting responsive, user-friendly, and visually stunning websites.I bring both technical expertise and design aesthetics to every project I work on.
+				This portfolio is a showcase of my projects, skills, and achievements as I navigate my journey in the tech world.
+				 Whether it's designing dynamic websites, analyzing data, or diving into coding challenges, I strive to bring creativity and functionality to every project I undertake.</p>
+          <p> Let's create something amazing together!</p>
+        </div>
+        <div class="image">
+         <img src="sans1.jfif" class="san" alt="profile" />
+        </div>
+      </div>
+    </section>
+	<script>
+	// for Typewriter effect
+
+const texts = [
+    "STUDENT",
+    "DEVELOPER",
+    "DESIGNER"
+]
+
+let speed = 100;
+
+const textElements = document.querySelector(".typewriter-text")
+
+let textIndex = 0;
+let charcterIndex = 0;
+
+function typeWriter() {
+    if(charcterIndex < texts[textIndex].length){
+        textElements.innerHTML += texts[textIndex].charAt(charcterIndex);
+        charcterIndex++;
+        setTimeout(typeWriter, speed); 
+    }
+    else{
+        setTimeout(eraseText, 1000)
+    }
+}
+
+function eraseText() {
+    if(textElements.innerHTML.length > 0){
+        textElements.innerHTML = textElements.innerHTML.slice(0,-1)
+        setTimeout(eraseText, 50)
+    }
+    else{
+        textIndex = (textIndex + 1) % texts.length;
+        charcterIndex = 0;
+        setTimeout(typeWriter,500)
+    }
+}
+
+window.onload = typeWriter;
+	</script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Santra Kaspar</title>
+    <link rel="stylesheet" href="styles3.css" />
+    <script>
+      // Function to show alert and redirect to the home page
+      function showAlertAndRedirect(event) {
+        event.preventDefault();  // Prevent the form from submitting immediately
+        
+        // Show the alert message
+        alert("Your message has been sent!");
+
+        // Redirect to the home page after a delay
+        setTimeout(function() {
+          window.location.href = "portflio_notepad.html";  // Replace with your home page URL
+        }, 2000);  // 2 seconds delay before redirect
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">Santra Kaspar</a></div>
+        <i class="ri-menu-line"></i>
+        <div class="links">
+          <ul>
+            <li><a href="portflio_notepad.html">Home</a></li>
+            <li><a href="aboutus.html">About Me</a></li>
+            <li><a href="projectpage.html">Projects</a></li>
+            <li><a href="skillspage.html">Skills</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="contact-section">
+      <div class="contact-container">
+        <h1>Contact Me</h1>
+        <p>If you have any questions or want to collaborate, feel free to get in touch!</p>
+        <div class="contact-details">
+          <p><strong>Email:</strong> santrazosan21@gmail.com</p>
+          <p><strong>Phone:</strong> +91 9150482107</p>
+          <p><strong>Location:</strong> Chennai, Tamil Nadu</p>
+        </div>
+
+        <!-- Add the onsubmit attribute to trigger the function -->
+        <form onsubmit="showAlertAndRedirect(event)" method="post" class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
